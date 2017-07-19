@@ -13,7 +13,10 @@ This is a list of packages we'll use on development side:
     "webpack-preset": "^0.2.0",
     "webpack-preset-babel": "^0.2.0",
     "webpack-preset-babel-stage-2": "^0.2.0",
-    "cross-env": "^5.0.1"
+    "cross-env": "^5.0.1",
+    "raw-loader": "^0.5.1",
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2"
 }
 ```
 
@@ -29,6 +32,8 @@ First of all we can start creating a package.json file by running ```$ npm init`
 "babel-preset-es2015-webpack", "webpack-preset", "webpack-preset-babel-stage-2" are all webpack presets for running babel compilator.
 
 "cross-env" is used for setting environment variables with NODE_ENV on windows (Most windows command prompts will choke when you set environment vars with NODE_ENV).
+
+"raw-loader", "css-loader" and "style-loader" are all loaders for different kind of assets bundling of webpack.
 
 ## Installing the dependencies of the application
 After installing devDependencies we need to install Angular, AngularUiRouter and ocLazyLoad, we can do it by running:
@@ -115,16 +120,27 @@ module.exports = config;
 In this case we are supposing this file structure:
 
 -app
+
     -common
+
         -services
+
         -directives
+
         -...
+
     -components
+
         -c1
+
         -c2
+
         -...
+
         -c(n)
+
     -index.js
+    
 -index.html
 
 ### index.js
