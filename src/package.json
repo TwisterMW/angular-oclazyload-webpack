@@ -18,7 +18,10 @@
     "webpack-preset": "^0.2.0",
     "webpack-preset-babel": "^0.2.0",
     "webpack-preset-babel-stage-2": "^0.2.0",
-    "cross-env": "^5.0.1"
+    "cross-env": "^5.0.1",
+    "raw-loader": "^0.5.1",
+    "css-loader": "^0.28.4",
+    "style-loader": "^0.18.2"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.3",
