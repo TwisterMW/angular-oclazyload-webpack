@@ -187,7 +187,18 @@ let calendarState = {
                 resolve(template);
             });
         });
-    }]
+    }],
+    resolve: {
+        calendarComponent: ['$q', '$ocLazyLoad', ($q, $ocLazyLoad) => {
+            return $q((resolve) => {
+                require.ensure([], () => {
+                    let mod = require('./');
+                    $ocLazyLoad.load({ name: mod.default.name });
+                    resolve(mod.default);
+                });
+            });
+        }]
+    }
 };
 
 export default calendarState;
