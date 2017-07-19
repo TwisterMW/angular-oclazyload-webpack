@@ -6,7 +6,7 @@
   "author": "Marc Hernández",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --colors && cp index.html dist/index.html",
-    "start": "cross-env NODE_ENV=production webpack-dev-server --progress --colors --content-base dist --watch",
+    "start": "cross-env NODE_ENV=production webpack-dev-server --progress --colors --content-base dist --watch"
   },
   "license": "ISC",
   "devDependencies": {

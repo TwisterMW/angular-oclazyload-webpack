@@ -119,29 +119,19 @@ module.exports = config;
 
 In this case we are supposing this file structure:
 
--app
 
-    -common
-
-        -services
-
-        -directives
-
-        -...
-
-    -components
-
-        -c1
-
-        -c2
-
-        -...
-
-        -c(n)
-
-    -index.js
-    
--index.html
+    -app
+        -common
+            -services
+            -directives
+            -...
+        -components
+            -c1
+            -c2
+            -...
+            -c(n)
+        -index.js
+    -index.html
 
 ### index.js
 At last we need to define our entry point file 'index.js':
